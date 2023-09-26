@@ -140,7 +140,7 @@ footer div {
     margin-top: 30px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1500px) {
     nav {
         position: absolute;
         right: 0px;
