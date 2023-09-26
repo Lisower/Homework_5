@@ -62,7 +62,7 @@ main h1 {
 
 .ul_div {
     border: 3px solid rgb(14, 2, 67);
-    width: 100%;
+    width: 100vw;
     padding: 10px;
     margin: 10px auto;
     list-style-position: inside;
@@ -80,7 +80,7 @@ ul li {
 
 .table_div {
     border: 3px solid rgb(14, 2, 67);
-    width: 100%;
+    width: 100vw;
     padding: 10px;
     margin: 10px auto;
     order: -2;
@@ -111,7 +111,7 @@ tr:nth-child(odd) {
 }
 
 form {
-    width: 100%;
+    width: 100vw;
     border: 3px solid rgb(14, 2, 67);
     padding-bottom: 20px;
     margin: 15px;
