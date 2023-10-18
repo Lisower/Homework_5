@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <script src="script.js" defer></script>
+        <title>ЗАДАНИЕ 5</title>
+    </head>
+
+    <body>
+        <h1>Калькулятор стоимости заказа</h1>
+        <form>
+            <label>
+                Тип товара: <br>
+                <select id="tovar-type">
+                    <option value="tovar-1">Товар 1</option>
+                    <option value="tovar-2">Товар 2</option>
+                    <option value="tovar-3">Товар 3</option>
+                </select>
+            </label>
+            <br><br>
+            <label>
+                Количество товара: <br>
+                <input id="tovar-number" placeholder="Введите количество товара...">
+            </label>
+            <br><br>
+            <button id="button">Рассчитать стоимость заказа</button>
+            <br><br>
+            <div id="result"></div>
+        </form>
+    </body>
+</html>
