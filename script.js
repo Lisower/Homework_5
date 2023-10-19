@@ -20,7 +20,8 @@ function cost(event){
         if (document.getElementById("tovar-number").value == "") alert("Количество товара не указано!");
         else alert("Некорректный ввод количества товара!");
     else
-        document.getElementById("result").innerHTML = "Стоимость заказа: " + price*number + " р. ";
+        if (number < 0) alert("Количество товара не может быть отрицательным!");
+        else document.getElementById("result").innerHTML = "Стоимость заказа: " + price*number + " р. ";
 }
 
 window.addEventListener("DOMContentLoaded", function() {
