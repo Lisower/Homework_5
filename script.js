@@ -15,13 +15,14 @@ function cost(event){
             price = 10;
             break;
     }
-    number = parseInt(document.getElementById("tovar-number").value);
+    number = parseFloat(document.getElementById("tovar-number").value);
     if (isNaN(number))
         if (document.getElementById("tovar-number").value == "") alert("Количество товара не указано!");
         else alert("Некорректный ввод количества товара!");
     else
         if (number < 0) alert("Количество товара не может быть отрицательным!");
-        else document.getElementById("result").innerHTML = "Стоимость заказа: " + price*number + " р. ";
+        else if (number != parseInt(document.getElementById("tovar-number").value)) alert("Количество товара не может быть дробным!");
+            else document.getElementById("result").innerHTML = "Стоимость заказа: " + price*number + " р. ";
 }
 
 window.addEventListener("DOMContentLoaded", function() {
